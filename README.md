@@ -4,4 +4,3 @@ Configs
 - elasticsearch.yml
 - kibana.yml
 - logstash.yml
-
