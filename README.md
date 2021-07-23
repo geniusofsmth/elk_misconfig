@@ -10,6 +10,8 @@ Configs:
 
 * **logstash.yml**
 
+-------------------------------------------
+
 + kibana.yml – параметр server.ssl.enabled:
 
 Включает SSL/TLS для входящих подключений к Kibana. Если установлено значение true, необходимо предоставить сертификат и соответствующий ему закрытый ключ. Их можно указать с помощью server.ssl.keystore.path или комбинации server.ssl.certificate и server.ssl.key. По умолчанию: false
