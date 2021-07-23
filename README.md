@@ -39,7 +39,7 @@
 ```
 -------------------------------------------
 ## Painless script can be used to attack to your system
-
+```sh
 GET seats/_search
 {
   "query": {
@@ -57,3 +57,4 @@ GET seats/_search
     }
   }
 }
+```sh
