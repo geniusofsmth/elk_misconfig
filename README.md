@@ -11,6 +11,7 @@ Configs:
 * **logstash.yml**
 
 -------------------------------------------
+**Potential vulnerable parameters**
 
 + kibana.yml – параметр server.ssl.enabled:
 
