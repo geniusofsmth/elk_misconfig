@@ -39,6 +39,8 @@
 ```
 -------------------------------------------
 ## Painless script can be used to attack to your system
+
+#### Filter context
 ```sh
 GET seats/_search
 {
