@@ -57,4 +57,4 @@ GET seats/_search
     }
   }
 }
-```sh
+```
