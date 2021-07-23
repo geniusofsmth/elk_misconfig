@@ -38,4 +38,22 @@
 Пути к клиентскому сертификату X.509 в кодировке PEM и соответствующему закрытому ключу. Они используются Kibana для аутентификации при выполнении исходящих SSL/TLS-подключений к Elasticsearch. Чтобы этот параметр вступил в силу, для xpack.security.http.ssl.client_authentication параметра Elasticsearch также необходимо установить значение "required"или "optional" И запросить сертификат клиента у Kibana
 ```
 -------------------------------------------
+## Painless script can be used to attack to your system
 
+GET seats/_search
+{
+  "query": {
+    "bool": {
+      "filter": {
+        "script": {
+          "script": {
+            "source": "doc['sold'].value == false && doc['cost'].value < params.cost",
+            "params": {
+              "cost": 25
+            }
+          }
+        }
+      }
+    }
+  }
+}
