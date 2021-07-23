@@ -36,3 +36,5 @@ Configs:
 + kibana.yml – параметр elasticsearch.ssl.certificate, elasticsearch.ssl.key:
 
 Пути к клиентскому сертификату X.509 в кодировке PEM и соответствующему закрытому ключу. Они используются Kibana для аутентификации при выполнении исходящих SSL/TLS-подключений к Elasticsearch. Чтобы этот параметр вступил в силу, для xpack.security.http.ssl.client_authentication параметра Elasticsearch также необходимо установить значение "required"или "optional" И запросить сертификат клиента у Kibana
+-------------------------------------------
+
