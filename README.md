@@ -10,13 +10,16 @@ Configs:
 
 * **logstash.yml**
 
-+ kibana.yml – параметр server.ssl.enabled: 
++ kibana.yml – параметр server.ssl.enabled:
+
 Включает SSL/TLS для входящих подключений к Kibana. Если установлено значение true, необходимо предоставить сертификат и соответствующий ему закрытый ключ. Их можно указать с помощью server.ssl.keystore.path или комбинации server.ssl.certificate и server.ssl.key. По умолчанию: false
 
 + kibana.yml – параметр server.xsrf.disableProtection:
+
 Установка этого значения true полностью отключит защиту от подделки межсайтовых запросов в Kibana. Это не рекомендуется. По умолчанию:false
 
 + kibana.yml – параметр elasticsearch.ssl.verificationMode:
+
 Управляет проверкой сертификата сервера, который получает Kibana при создании исходящего SSL/TLS-соединения с Elasticsearch. Допустимые значения "full", "certificate"и "none". Использование "full"выполняет проверку имени хоста, использование "certificate"пропускает проверку имени хоста, а использование "none"полностью пропускает проверку. По умолчанию:"full"
 
 + kibana.yml – параметр elasticsearch.requestHeadersWhitelist:
