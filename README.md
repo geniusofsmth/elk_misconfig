@@ -31,3 +31,7 @@ Configs:
 + kibana.yml – параметр csp.strict:
 
 Блокирует доступ Kibana к любому браузеру, который не применяет даже элементарные правила CSP. На практике это отключает поддержку старых, менее безопасных браузеров, таких как Internet Explorer. По умолчанию:true
+
++ kibana.yml – параметр elasticsearch.ssl.certificate, elasticsearch.ssl.key:
+
+Пути к клиентскому сертификату X.509 в кодировке PEM и соответствующему закрытому ключу. Они используются Kibana для аутентификации при выполнении исходящих SSL/TLS-подключений к Elasticsearch. Чтобы этот параметр вступил в силу, для xpack.security.http.ssl.client_authentication параметра Elasticsearch также необходимо установить значение "required"или "optional" И запросить сертификат клиента у Kibana
